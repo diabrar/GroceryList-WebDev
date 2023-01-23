@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shop Lift Up: Grocery List</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="init();">
+    <div class="container">
+      <div id="title">
+        <h1 id="name">Shop Lift Up</h1>
+        <img id="logo" src="images/LOGO.png" height="150" width="150" />
+      </div>
+
+      <div id="navbar">
+        <input type="text" id="listInput" placeholder="Item to Add" />
+        <button id="add" onclick="addItem(inputVal.value);">Add Item</button>
+        <input type="text" id="itemRemoved" placeholder="Item to Remove" />
+        <button id="remove" onclick="removeItem(delItem.value);">
+          Remove Item
+        </button>
+        <input type="text" id="itemMove" placeholder="Item # to Move" />
+        <button id="moveUp" onclick="moveUp();">
+          <img src="images/UP-ARROW.png" height="20" width="30" />
+        </button>
+        <button id="moveDown" onclick="moveDown();">
+          <img src="images/DOWN-ARROW.png" height="20" width="30" />
+        </button>
+        <button id="clear">Clear List</button>
+        <audio controls src="airplane-mode.mp3">
+          <a href="airplane-mode.mp3">
+            Sorry, this audio type is not supported.
+          </a>
+        </audio>
+      </div>
+
+      <div id="listBody">
+        <div id="listSpace">Your List:</div>
+        <ol id="list"></ol>
+        <h2>Tutorial:</h2>
+        <video width="320" height="240" controls>
+          <source src="how-to.mov" type="video/mp4" />
+          Sorry, this video type is not supported.
+        </video>
+      </div>
+
+      <div id="credits">
+        <i>
+          Audio is credited to ChillHop Music on Spotify. </br> Video is original by
+          me.
+        </i>
+      </div>
+    </div>
+  </body>
+</html>
